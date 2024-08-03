@@ -4,18 +4,18 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("1. Numbers from 1 to 25 as an NxN matrix: ");
         step1();
 
         System.out.println("2. Enter a number from 1 to 12: ");
         step2(sc.nextInt());
 
-        System.out.println("Enter 3 numbers to get square root: ");
+        System.out.println("3. Enter 3 numbers to get square root: ");
         step3(sc.nextDouble(), sc.nextDouble(), sc.nextDouble());
     }
 
     static void step1() {
         int count = 1;
-        System.out.println("1. Numbers from 1 to 25 as an NxN matrix: ");
         for (int i = 0; i < 5; i++) {
             for (int j = 0; j < 5; j++) {
                 System.out.print(count++ + " ");
